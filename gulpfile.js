@@ -42,7 +42,7 @@ gulp.task('sass:css', function () {
 gulp.task('js', function(){
     gulp.src(path.src.js)
         .pipe(gulp.dest(path.build.js));
-    return gulp.src(dest.src.js);
+    return gulp.src(path.src.js);
 });
 
 gulp.task('watch', function(){

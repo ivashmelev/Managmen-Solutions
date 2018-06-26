@@ -6,6 +6,8 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
         link(rel="stylesheet", href="build/css/screen_2.css")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+        script(src="build/js/slider.js")
         title Managment&Solutions
     body
         .screen_2
@@ -44,9 +46,21 @@ html(lang="en")
                                         li Digital-Маркетинг
                             .col-xl-4
                                 .slider
-                                    img(src="build/img/jefferson-santos-450403-unsplash.png")
-                                    p Разработка
+                                    img.slide-active(src="build/img/jefferson-santos-450403-unsplash.png")
+                                    p.label Разработка
                                     .slider-text
+                                        h1 Lorem Ipsum
+                                        p Lorems
+                                    img.slide-preview(src="build/img/Facebook-Post-1.png")
+                                    .control-panel
+                                        img.left(src="build/img/right-arrow.png")
+                                        .span
+                                            span#number 1
+                                            span /6
+                                        img.right(src="build/img/left-arrow.png")
+
+                                    
+                                    
 
                             
 

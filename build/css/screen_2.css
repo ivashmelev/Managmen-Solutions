@@ -54,7 +54,7 @@ body {
   position: relative; }
 
 .content-2 p {
-  width: 70%; }
+  width: 60%; }
 
 .line {
   margin: 10px 0 0 0; }
@@ -93,21 +93,36 @@ body {
       bottom: 5px;
       z-index: -1; }
 
+.line-a {
+  margin-bottom: 50px; }
+  .line-a a, .line-a .top-menu span, .top-menu .line-a span, .line-a .sidebar span, .sidebar .line-a span {
+    position: relative; }
+    .line-a a::after, .line-a .top-menu span::after, .top-menu .line-a span::after, .line-a .sidebar span::after, .sidebar .line-a span::after {
+      content: "";
+      display: block;
+      height: 9px;
+      width: 100%;
+      background-color: blue;
+      position: absolute;
+      bottom: 9px;
+      z-index: -1; }
+
 .slider .slide-active {
   margin-top: 8%;
   position: absolute;
-  margin-left: -55%;
+  margin-left: -45%;
   z-index: 5; }
 
 .slider .slide-preview {
   position: absolute;
-  margin-left: 5%; }
+  margin-left: 5%;
+  margin-top: 5%; }
 
 .slider .control-panel {
   position: absolute;
-  margin-top: 70%;
+  margin-top: 50%;
   z-index: 9;
-  margin-left: -55%;
+  margin-left: -45%;
   font-size: 22px; }
 
 .slider .span {
@@ -125,7 +140,7 @@ body {
   text-align: center;
   line-height: 59px;
   top: 90%;
-  left: -55%; }
+  left: -45%; }
 
 .slider .hover {
   background: #1900ff48; }
@@ -138,7 +153,8 @@ body {
   height: 464px;
   z-index: 12;
   padding: 15px;
-  display: none; }
+  display: none;
+  box-shadow: 15px -15px #1c26b9; }
   .slider-text h1 {
     font-size: 22pt;
     color: white; }
@@ -152,3 +168,33 @@ body {
   .slider-text p {
     font-size: 16pt;
     color: white; }
+
+.sidebar {
+  width: 100%;
+  height: 100vh;
+  background: white;
+  position: absolute;
+  z-index: 50;
+  color: black;
+  left: 0;
+  right: 0; }
+  .sidebar a, .sidebar span {
+    color: black;
+    line-height: 50px; }
+  .sidebar a:hover, .sidebar span:hover {
+    color: black; }
+  .sidebar span {
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px; }
+  .sidebar img {
+    line-height: 50px;
+    display: inline-block; }
+  .sidebar nav {
+    padding-right: 50px;
+    font-size: 35pt;
+    font-weight: bold; }
+    .sidebar nav a, .sidebar nav span {
+      margin-bottom: 50px; }
+    .sidebar nav a:hover, .sidebar nav span:hover {
+      text-decoration: none; }
